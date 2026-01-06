@@ -87,12 +87,12 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 relative overflow-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 relative overflow-hidden">
       {/* Background Orbs */}
       <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-purple-500/30 rounded-full blur-[100px]" />
       <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-orange-500/30 rounded-full blur-[100px]" />
 
-      <div className="z-10 w-full max-w-md glass rounded-2xl p-8 space-y-8 animate-fade-in-up">
+      <div className="z-10 w-full max-w-md glass rounded-2xl p-6 sm:p-8 space-y-8 animate-fade-in-up">
         <div className="text-center space-y-2">
           <h1 className="text-4xl font-black bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-600">
             Strava Sync
@@ -164,7 +164,7 @@ export default function Home() {
                 ))}
               </select>
 
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 <div className="flex flex-col">
                   <label className="text-xs text-gray-400 mb-1">Start Date (Optional)</label>
                   <input
